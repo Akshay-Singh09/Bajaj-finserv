@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (request, response) => {
+app.post('/', (request, response) => {
     var arr =request.query.data;
     var len = arr.length;
     var numbers = [];
