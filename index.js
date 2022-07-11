@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => {
+    res.send("Server On");
+});
+
 app.post('/', (request, response) => {
     var arr =request.query.data;
     var len = arr.length;
